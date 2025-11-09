@@ -1,0 +1,15 @@
+:root{ --bg:#0f1115; --panel:#151922; --text:#e8eaf0; --muted:#a7b0c0; --accent:#22d3ee; --border:#232b3d; }
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(1000px 700px at 10% -10%,#1b2438 0%,var(--bg) 40%,var(--bg) 100%);color:var(--text);font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Arial}
+.container{max-width:1200px;margin:24px auto;padding:0 16px}
+.nav{display:flex;gap:12px;margin-bottom:16px}
+.nav button{background:var(--panel);border:1px solid var(--border);color:var(--text);padding:10px 14px;border-radius:12px;cursor:pointer}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:16px;padding:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border-bottom:1px solid var(--border);padding:8px 10px;text-align:left;color:var(--muted)}
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi .card h2{margin:0;font-size:28px}
+.kpi .card p{margin:6px 0 0;color:var(--muted)}
+.radarWrap{position:relative;background:#0b0f17;border-radius:16px;border:1px solid var(--border);height:380px;overflow:hidden}
+.radarWrap canvas{width:100%;height:100%}
+.badge{display:inline-block;padding:4px 8px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:12px}
